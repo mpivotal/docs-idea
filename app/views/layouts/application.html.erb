@@ -3,12 +3,14 @@
   <head>
     <title>App</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag '/pui/components.css', media: 'all' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body style="min-width: 1024px;">
+    <div class="container-fluid pan">
+      <%= yield %>
+    </div>
   </body>
 </html>

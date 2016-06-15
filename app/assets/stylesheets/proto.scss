@@ -1,3 +1,13 @@
-// Place all the styles related to the proto controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.header .logo {
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    display: inline-block;
+    background-size: cover;
+    background-image: image-url('pivotal-header-logo@2x.png');
+}
+.activity-icon {
+  border-radius: 80px;
+  max-width: 76px;
+  margin: auto;
+}
