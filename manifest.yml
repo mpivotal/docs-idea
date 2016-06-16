@@ -1,15 +1,6 @@
 applications:
-- name: my-super-app
-  disk_quota: 1024M
+- name: docsidea
   domain: cfapps.io
-  host: my-super-app
+  host: docsidea
   instances: 1
   memory: 512M
-  state: stopped
-  processes:
-  - name: web
-    command: bundle exec rails s -p $PORT
-  - name: console
-    command: bundle exec
-    instances: 0
-
