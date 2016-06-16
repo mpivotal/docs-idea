@@ -1,27 +1,8 @@
-.row-fluid
-  .col-xs-24.col-sm-24.col-md-24.col-lg-24.pan.man.bg-dark-1.type-neutral-11
-    .header
-      %a{:href => "/"}
-        %span.logo
-        %span.product.type-neutral-11.h4.mll
-          %span.em-high
-            Pivotal Documentation
-.row-fluid.phxxl
-  .col-xs-24.col-sm-24.col-md-24.col-lg-24.mtxl.phn
-    .col-xs-18.col-sm-18.col-md-18.col-lg-18
-      = image_tag 'pcf@2x.png', width: 70, class: 'txt-m'
-      %span.txt-m
-        %span.h1.txt-b.mls
-          Pivotal Cloud Foundry
-        %span.small.type-neutral-4
-          v1.7
-    .col-xs-6.col-sm-6.col-md-6.col-lg-6
-      .form-group.form-group-search.pull-right
-        %input#searchInput.form-control{:placeholder => "Search"}/
-        %i.search-icon
+= render partial: 'partials/nav'
+= render partial: 'partials/top'
 .row-fluid.phxxl
   .col-xs-8.col-sm-8.col-md-8.col-lg-8.mtxl
-    = link_to '#', class: 'type-neutral-2' do
+    = link_to '/install', class: 'type-neutral-2' do
       .panel.panel-clickable-alt.bg-neutral-11{ style: 'border: 1px solid #eeeeee;'}
         .panel-body.txt-c
           .title
@@ -30,7 +11,7 @@
             .h1.man.mbxl.em-low
               Install
   .col-xs-8.col-sm-8.col-md-8.col-lg-8.mtxl
-    = link_to '#', class: 'type-neutral-2' do
+    = link_to '/use', class: 'type-neutral-2' do
       .panel.panel-clickable-alt.bg-neutral-11{ style: 'border: 1px solid #eeeeee;'}
         .panel-body.txt-c
           .title
@@ -39,7 +20,7 @@
             .h1.man.mbxl.em-low
               Use
   .col-xs-8.col-sm-8.col-md-8.col-lg-8.mtxl
-    = link_to '#', class: 'type-neutral-2' do
+    = link_to '/extend', class: 'type-neutral-2' do
       .panel.panel-clickable-alt.bg-neutral-11{ style: 'border: 1px solid #eeeeee;'}
         .panel-body.txt-c
           .title
@@ -47,10 +28,4 @@
               .fa.fa-icon.fa-cogs{ style: 'font-size: 64px'}
             .h1.man.mbxl.em-low
               Extend
-.row-fluid.phxxl
-  .col-xs-24.col-sm-24.col-md-24.col-lg-24.mvxxl
-    %ul.list-inline
-      %li
-        = link_to "Cloud Foundry Concepts", '#', class: 'h3'
-      %li.mlxl
-        = link_to "API Quick Reference", '#', class: 'h3'
+= render partial: 'partials/bottom'

@@ -1,0 +1,6 @@
+applications:
+- name: docsidea
+  domain: cfapps.io
+  host: docsidea
+  instances: 1
+  memory: 512M

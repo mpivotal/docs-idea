@@ -1,0 +1,23 @@
+= render partial: 'partials/nav'
+= render partial: 'partials/top'
+.row-fluid.phxxl
+  .col-xs-24.col-sm-24.col-md-24.col-lg-24.ptxl
+    = link_to '/', class: 'clearfix' do
+      .fa.fa-icon.fa-chevron-left
+      Back
+    %h1 IaaS-specific Instructions
+    %ul
+      %li
+        = link_to "AWS", 'http://docs.pivotal.io/pivotalcf/1-7/customizing/cloudform.html'
+      %li
+        = link_to ""
+    %h2 vSphere
+    %ul
+      %li
+        Section
+    %h2 OpenStack
+    %ul
+      %li
+        Section
+
+= render partial: 'partials/bottom' 
